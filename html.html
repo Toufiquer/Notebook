@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <base href="https://www.w3schools.com/" target="_blank" />
+        <script src="js.js"></script>
+        <title>Html Tutorials</title>
+        <!-- Add a Favicon -->
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <!-- -------------------------------------------------------------------------------------------------- ->
+        HTML head Elements
+        --------------------------------------------
+        Tag	        Description
+        <head>	    Defines information about the document
+        <title>	    Defines the title of a document
+        <base>	    Defines a default address or a default target for all links on a page
+        <link>	    Defines the relationship between a document and an external resource
+        <meta>	    Defines metadata about an HTML document
+        <script>	Defines a client-side script
+        <style>	    Defines style information for a document
+<-- -------------------------------------------------------------------------------------------------- -->
+    </head>
+
+    <body>
+        <!-- HTML full meaning HyperText Markup Language -->
+        <!-- <(start)> </(end)> and much more    =>   is called Tag -->
+
+        <!-- -------------------------------------------------------------------------------------------------- ->
+        Semantic Elements in HTML
+        -----------------------------------------------------------------------------------------------------
+        <article>
+        <aside>
+        <details>
+        <figcaption>
+        <figure>
+        <footer>
+        <header>
+        <main>
+        <mark>
+        <nav>
+        <section>
+        <summary>
+        <time>
+        -----------------------------------------------------------------------------------------------------
+        HTML Layout Elements    ||      SEO
+        -----------------------------------------------------------------------------------------------------
+        <header> -  Defines a header for a document or a section
+        <nav> -     Defines a set of navigation links
+        <section> - Defines a section in a document
+        <article> - Defines an independent, self-contained content
+        <aside> -   Defines content aside from the content (like a sidebar)
+        <footer> -  Defines a footer for a document or a section
+        <details> - Defines additional details that the user can open and close on demand
+        <summary> - Defines a heading for the <details>
+<-- -------------------------------------------------------------------------------------------------- -->
+
+        <!-- Line brake -->
+        <br />
+
+        <!-- heading -->
+        <h1></h1>
+        <h2></h2>
+        <h3></h3>
+        <h4></h4>
+        <h5></h5>
+        <h6></h6>
+
+        <!-- paragraph -->
+        <p></p>
+
+        <!-- Attribute -->
+        <a href="https://www.google.com/" title="Go to W3Schools HTML section"
+            >Name</a
+        ><br />
+        <a
+            target="_self"
+            href="https://www.google.com/"
+            title="Go to W3Schools HTML section"
+            >self</a
+        ><br />
+        <a
+            target="_parent"
+            href="https://www.google.com/"
+            title="Go to W3Schools HTML section"
+            >parent</a
+        ><br />
+        <a
+            target="_top"
+            href="https://www.google.com/"
+            title="Go to W3Schools HTML section"
+            >top</a
+        ><br />
+        <!-- Open other window -->
+        <a
+            target="_blank"
+            href="https://www.google.com/"
+            title="Go to W3Schools HTML section"
+            >blank</a
+        ><br />
+        <!-- mail to  -->
+        <a
+            href="mailto:someone@example.com"
+            title="Go to W3Schools HTML section"
+            >Send email</a
+        >
+        <button
+            onclick="document.location='default.asp'"
+            title="Go to W3Schools HTML section"
+        >
+            HTML Tutorial
+        </button>
+        <!-- Css pseudo-classes:    ||      a:link, a:visited, a:hover, a:active -->
+        <!-- Book marks -->
+        <a href="html_demo.html#C4">Jump to Chapter 4</a>
+
+        <!-- Style -->
+        <h1 style="color: red">Text with red color.</h1>
+
+        <!-- Formatting | Change text style -->
+        <b>Bold text</b>
+        <strong>Important text</strong>
+        <i>Italic text</i>
+        <em>Emphasized text</em>
+        <mark>Marked text</mark>
+        <small>Smaller text</small>
+        <del>Deleted text</del>
+        <ins>Inserted text</ins>
+        <sub>Subscript text</sub>
+        <sup>Superscript text</sup>
+
+        <!-- Quotations ||   show => Tab -->
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            Quotations
+        </blockquote>
+        <q>q</q>
+        <abbr>abbr</abbr>
+        <address>address</address>
+        <cite>cite</cite>
+        <bdo>bdo</bdo>
+
+        <!-- image -->
+        <a href="https://www.w3schools.com/html/html_images_imagemap.asp"
+            >For details</a
+        >
+        <!-- ------------------------------------------------------------------------------------------ -->
+        <img src="url" alt="alternate text" />
+        <img
+            src="img_girl.jpg"
+            alt="Girl in a jacket"
+            width="500"
+            height="600"
+        />
+        <img
+            src="/images/html5.gif"
+            alt="HTML5 Icon"
+            style="width: 128px; height: 128px"
+        />
+        <!-- Image Maps -->
+        <img src="workplace.jpg" alt="Workplace" usemap="#work-map" />
+        <map name="work-map">
+            <area
+                shape="rect"
+                coords="34,44,270,350"
+                alt="Computer"
+                href="computer.htm"
+            />
+            <area
+                shape="rect"
+                coords="290,172,333,250"
+                alt="Phone"
+                href="phone.htm"
+            />
+            <area
+                shape="circle"
+                coords="337,300,44"
+                alt="Coffee"
+                href="coffee.htm"
+            />
+        </map>
+        <area
+            shape="poly"
+            coords="140,121,181,116,204,160,204,222,191,270,140,329,85,355,58,352,37,322,40,259,103,161,128,147"
+            href="croissant.htm"
+        />
+        <picture>
+            <source media="(min-width: 650px)" srcset="img_food.jpg" />
+            <source media="(min-width: 465px)" srcset="img_car.jpg" />
+            <img src="img_girl.jpg" />
+        </picture>
+
+        <!-- Table -->
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Centra commercial Montezuma</td>
+                <td>Maria Andres</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centra commercial Montezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+        </table>
+        <!-- ============================================================================================>
+        tr:nth-child(even)
+        td:nth-child(even)
+        th:nth-child(even)
+        tr:hover
+        ------------------------------
+        <colgroup>
+            <col span="2" style="background-color: #D6EEEE">
+        </colgroup>
+        ---------------------------------------------------------------------------------------------
+        <th colspan="2">Name</th>
+        <th rowspan="2">Name</th>
+    <================================================================================================>
+                Tag	            Description
+                <table>	        Defines a table
+                <th>	        Defines a header cell in a table
+                <tr>	        Defines a row in a table
+                <td>	        Defines a cell in a table
+                <caption>	    Defines a table caption
+                <colgroup>	    Specifies a group of one or more columns in a table for formatting
+                <col>	        Specifies column properties for each column within a <colgroup> element
+                <thead>	        Groups the header content in a table
+                <tbody>	        Groups the body content in a table
+                <tfoot>	        Groups the footer content in a table
+    <================================================================================================ -->
+
+        <!-- Lists -->
+        <ul>
+            <!-- unordered list -->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul>
+
+        <ol type="1">
+            <!-- ordered list -->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ol>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+
+        <!-- ============================================================================================>
+        Tag     Description
+        <ul>    Defines an unordered list
+        <ol>    Defines an ordered list
+        <li>    Defines a list item
+        <dl>    Defines a description list
+        <dt>    Defines a term in a description list
+        <dd>    Describes the term in a description list
+    <================================================================================================ -->
+
+        <!-- Here are the block-level elements in HTML: -->
+        <!-- --------------------------------------------------------------------------------------------- ->
+        width: 100%;
+    <-- --------------------------------------------------------------------------------------------- ->
+    01.          <address></address>
+    02.          <article></article>
+    03.          <aside></aside>
+    04.          <blockquote></blockquote>
+    05.          <canvas></canvas>
+    06.          <dd></dd>
+    07.          <div></div>
+    08.          <dl></dl>
+    09.          <dt></dt>
+    10.          <fieldset></fieldset>
+    11.          <figcaption></figcaption>
+    12.          <figure></figure>
+    13.          <footer></footer>
+    14.          <form></form>
+    15.          <h1></h1>...
+    16.          <h6></h6>
+    17.          <header></header>
+    18.          <hr>
+    19.          <li></li>
+    20.          <main></main>
+    21.          <nav></nav>
+    22.          <noscript></noscript>
+    23.          <ol></ol>
+    24.          <p></p>
+    25.          <pre></pre>
+    26.          <section></section>
+    27.          <table></table>
+    29.          <ul></ul>
+    28.          <tfoot></tfoot>
+    <--------------------------------------------------------------------------------------------- -->
+
+        <!-- Here are the inline elements in HTML: -->
+        <!-- --------------------------------------------------------------------------------------------- ->
+        width: fit-content;
+    <-- --------------------------------------------------------------------------------------------- ->
+    01.            <a></a>
+    02.            <abbr></abbr>
+    03.            <acronym></acronym>
+    04.            <b></b>
+    05.            <bdo></bdo>
+    06.            <big></big>
+    07.            <br></br>
+    08.            <button></button>
+    08.            <cite></cite>
+    09.            <code></code>
+    10.            <dfn></dfn>
+    11.            <em></em>
+    12.            <i></i>
+    13.            <img></img>
+    14.            <input></input>
+    15.            <kbd></kbd>
+    16.            <label></label>
+    17.            <map></map>
+    18.            <object></object>
+    19.            <output></output>
+    20.            <q></q>
+    21.            <samp></samp>
+    22.            <script></script>
+    23.            <select></select>
+    24.            <small></small>
+    25.            <span></span>
+    26.            <strong></strong>
+    27.            <sub></sub>
+    28.            <sup></sup>
+    29.            <textarea></textarea>
+    30.            <time></time>
+    31.            <tt></tt>
+    32.            <var></var>
+    <--------------------------------------------------------------------------------------------- -->
+        <!-- Iframe  -->
+        <iframe src="url" title="description"></iframe>
+        <!-- --------------------- -->
+        <iframe
+            src="demo_iframe.htm"
+            name="iframe_a"
+            title="Iframe Example"
+        ></iframe>
+        <p>
+            <a href="https://www.w3schools.com" target="iframe_a"
+                >W3Schools.com</a
+            >
+        </p>
+
+        <!-- print code -->
+        <code> x = 5; y = 6; z = x + y; || z= 11 </code>
+
+        <!-- form -->
+        <!-- <form action="/action_page.php" method="get/post" autocomplete="on"></form> -->
+        <form>
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" /><br />
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" />
+            <!-- radio  -->
+            <input type="radio" id="html" name="fav_language" value="HTML" />
+            <label for="html">HTML</label><br />
+            <input type="radio" id="css" name="fav_language" value="CSS" />
+            <label for="css">CSS</label><br />
+            <input
+                type="radio"
+                id="javascript"
+                name="fav_language"
+                value="JavaScript"
+            />
+            <label for="javascript">JavaScript</label>
+            <!-- checkbox -->
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" />
+            <label for="vehicle1"> I have a bike</label><br />
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car" />
+            <label for="vehicle2"> I have a car</label><br />
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat" />
+            <label for="vehicle3"> I have a boat</label>
+            <!-- value -->
+            <label for="fname">First name:</label><br />
+            <input type="text" id="fname" name="fname" value="John" /><br />
+            <label for="lname">Last name:</label><br />
+            <input
+                type="text"
+                id="lname"
+                name="lname"
+                value="Doe"
+            /><br /><br />
+            <input type="submit" value="Submit" />
+            <!-- ------------------------------------------------------------- ->
+        <input>
+        <label></label>
+        <select></select>
+        <textarea></textarea>
+        <button></button>
+        <fieldset></fieldset>
+        <legend></legend>
+        <datalist></datalist>
+        <output></output>
+        <option></option>
+        <optgroup></optgroup>
+        <-- ------------------------------------------------------------- ->
+        HTML Input Types
+        ------------------------------------
+        <input type="button">
+        <input type="checkbox">
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="email">
+        <input type="file">
+        <input type="hidden">
+        <input type="image">
+        <input type="month">
+        <input type="number">
+        <input type="password">
+        <input type="radio">
+        <input type="range">
+        <input type="reset">
+        <input type="search">
+        <input type="submit">
+        <input type="tel">
+        <input type="text">
+        <input type="time">
+        <input type="url">
+        <input type="week">
+        <-- ------------------------------------------------------------- -->
+        </form>
+
+        <canvas id="myCanvas" width="200" height="100"></canvas>
+        <svg width="100" height="100">
+            <circle
+                cx="50"
+                cy="50"
+                r="40"
+                stroke="green"
+                stroke-width="4"
+                fill="yellow"
+            />
+        </svg>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/Uykt8pXFBA4"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        >
+        </iframe>
+    </body>
+</html>
