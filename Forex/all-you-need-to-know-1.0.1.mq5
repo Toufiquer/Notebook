@@ -406,3 +406,4 @@ void OnTick()
 
 
  /* ******************************************************  */
+//  https://mql5tutorial.com/mql5-tutorial-basics-47-simple-stochastic-ea/

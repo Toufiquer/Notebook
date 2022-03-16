@@ -53,8 +53,213 @@
     /* Short Hand */
     border-style: dotted dashed solid double;
     border: 5px solid red;
+    /* Border Color */
+    border-color: red;
+    border-color: #fff;
+    border-color: rgb(0, 128, 0);
+    border-color: rgba(0, 128, 0, 0.3);
+    border-color: hsl(0, 100%, 50%);
+    /* Border Value */
+    border-style: dotted solid double dashed;
+    /* 
+        top border is dotted
+        right border is solid
+        bottom border is double
+        left border is dashed
+    */
+
+    /* Margin */
+    /* ======================================================================== */
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+    /* Short Hand */
+    margin: 25px 50px 75px 100px;
+    margin: 0 auto;
+    margin: 0 2%;
+    /* Padding */
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+    /* Short Hand */
+    padding: 25px 50px 75px 100px;
+    padding: 0 auto;
+    padding: 0 2%;
+
+    /* Box-sizing */
+    /* ======================================================================== */
+    /* To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its actual width; if you increase the padding, the available content space will decrease. */
+    box-sizing: border-box;
+
+    /* Height */
+    /* ======================================================================== */
+    height: auto;
+    height: 80px;
+    height: 50%;
+    height: initial;
+    height: inherit;
+    max-height: fit-content;
+    max-height: max-content;
+    max-height: min-content;
+    max-height: 500px;
+
+    /* Width */
+    /* ======================================================================== */
+    width: auto;
+    width: 80px;
+    width: 50%;
+    width: initial;
+    width: inherit;
+    max-width: fit-content;
+    max-width: max-content;
+    max-width: min-content;
+    max-width: 500px;
+
+    /* Outline */
+    /* ======================================================================== */
+    outline-style: dotted;
+    outline-style: dashed;
+    outline-style: solid;
+    outline-style: double;
+    outline-style: groove;
+    outline-style: ridge;
+    outline-style: inset;
+    outline-style: outset;
+    /* Outline width */
+    outline-width: thin;
+    outline-width: medium;
+    outline-width: thick;
+    outline-width: 4px;
+    outline-color: red; /* Use Color code */
+    /* Short Hand */
+    outline: thick ridge pink;
+    outline: 5px solid yellow;
+
+    /* Text */
+    /* ======================================================================== */
+    color: red; /* Use color Code. */
+    background-color: lightgrey;
+    text-align: left;
+    text-align: center;
+    text-align: right;
+    text-align: justify;
+
+    /* Align for last line */
+    text-align-last: right;
+    text-align-last: center;
+    text-align-last: justify;
+
+    /* Text Direction */
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+    /* Vertical Alignment */
+    vertical-align: baseline;
+    vertical-align: text-top;
+    vertical-align: text-bottom;
+    vertical-align: sub;
+    vertical-align: super;
+
+    /* CSS Text Decoration */
+    text-decoration-line: overline;
+    text-decoration-line: line-through;
+    text-decoration-line: underline;
+    text-decoration-line: overline underline;
+    text-decoration-color: red; /* Use Color Code */
+    text-decoration-style: double; /* Use Style Code */
+
+    /* All in one */
+
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: double;
+    text-decoration-thickness: 5px; /* (optional) */
+
+    /* Text Transformation */
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize; /* Toufiquer Rahman. */
+
+    /*Text Shadow*/
+    text-shadow: 2px 2px 5px red;
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+
+    text-indent: 50px; /* Text Indentation */
+    letter-spacing: 5px; /* Letter Spacing */
+    line-height: 0.8; /* Line Height */
+    word-spacing: 10px; /* Word Spacing */
+    white-space: nowrap; /* White Space */
+
+    /* Font */
+    /* ======================================================================== */
+    font-family: "Times New Roman", Times, serif; /*Font Family*/
+    font-size: 30px;
+    font-size: 0.875em; /* 14px/16=0.875em */
+    /* 16px = 1em */
+
+    /* Font style */
+    font-style: normal;
+    font-style: italic;
+    font-style: oblique;
+
+    /* Font Weight */
+    font-weight: normal;
+    font-weight: bold;
+
+    /* Font Variant */
+    font-variant: normal;
+    font-variant: small-caps;
+
+    /* Responsive Font Size */
+    font-size: 10vw;
+    /* Short Hand */
+    font: italic small-caps bold 12px/30px Georgia, serif;
+    /*
+    font-style
+    font-variant
+    font-weight
+    font-size/line-height
+    font-family
+    */
+
+    /* Styling Links */
+    /* ======================================================================== */
+    /* unvisited link */
+    /* a:link */
+    /* a:visited */
+    /* a:hover  */
+    /* a:active  */
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    /* Cursor */
+    /* ======================================================================== */
+    cursor: auto;
+    cursor: crosshair;
+    cursor: default;
+    cursor: e-resize;
+    cursor: help;
+    cursor: move;
+    cursor: n-resize;
+    cursor: ne-resize;
+    cursor: nw-resize;
+    cursor: pointer;
+    cursor: progress;
+    cursor: s-resize;
+    cursor: se-resize;
+    cursor: sw-resize;
+    cursor: text;
+    cursor: w-resize;
+    cursor: wait;
+    /* ======================================================================== */
     /* ======================================================================== */
 }
-/* Border Width
-https://www.w3schools.com/css/css_border_width.asp
-*/
+
+/* https://www.w3schools.com/css/css_list.asp */
