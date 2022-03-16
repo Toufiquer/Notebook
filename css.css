@@ -258,8 +258,83 @@
     cursor: text;
     cursor: w-resize;
     cursor: wait;
+
+    /* List Order */
+    /* ======================================================================== */
+    /* Unordered Lists: */
+    list-style-type: circle;
+    list-style-type: square;
+    list-style-type: upper-roman;
+    list-style-type: lower-alpha;
+
+    /* Image */
+    list-style-image: url("sqpurple.gif");
+
+    /* Position */
+    list-style-position: outside;
+    list-style-position: inside;
+
+    /* Table */
+    /* ======================================================================== */
+    /* th, td */
+    /* tr:nth-child(even) */
+    border-collapse: collapse;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    text-align: left;
+    /* vertical-align: bottom; */
+
+    /* The display Property */
+    /* ======================================================================== */
+    display: inline;
+    display: block;
+    display: none;
+    visibility: hidden;
+
+    /* Position */
+    /* ======================================================================== */
+    position: static;
+    position: relative;
+    position: absolute;
+
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: -1;
+
+    /* Overflow */
+    /* ======================================================================== */
+    overflow: visible;
+    overflow: hidden;
+    overflow: scroll;
+    overflow: auto;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    overflow-y: scroll; /* Add vertical scrollbar */
+
+    /* Float */
+    /* ======================================================================== */
+    /*
+        float: right;
+        float: left;
+        float: none;
+    */
+    /* Clear */
+    /* ======================================================================== */
+
+    clear: left;
+    clear: right;
+    clear: both;
+    /* ======================================================================== */
+    /* ======================================================================== */
     /* ======================================================================== */
     /* ======================================================================== */
 }
 
-/* https://www.w3schools.com/css/css_list.asp */
+
+
+/* https://www.w3schools.com/css/css_pseudo_classes.asp */
