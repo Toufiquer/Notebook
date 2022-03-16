@@ -1,0 +1,60 @@
+/* Single Line Comment */
+/**
+* Multi Line Comment
+* Multi Line Comment
+*/
+
+/* Background */
+* {
+    /* Color */
+    /* ======================================================================== */
+    background-color: dodgerblue;
+    background: rgba(0, 128, 0, 0.3); /* Green background with 30% opacity */
+    /* Image */
+    background-image: url("paper.gif");
+    background-image: url("bg-desert.jpg");
+    /* Repeat */
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    background-repeat: no-repeat;
+    /* Position */
+    background-position: right top;
+    /* Attachment */
+    background-attachment: fixed;
+    background-attachment: scroll;
+    /* Short Hand */
+    /* background: #ffffff url("img_tree.png") no-repeat right top; */
+
+    /*  
+        Order Value
+        When using the shorthand property the order of the property values is:
+            background-color
+            background-image
+            background-repeat
+            background-attachment
+            background-position
+    */
+
+    /* Border */
+    /* ======================================================================== */
+    border-style: dotted;
+    border-style: dashed;
+    border-style: solid;
+    border-style: double;
+    border-style: groove;
+    border-style: ridge;
+    border-style: inset;
+    border-style: outset;
+    border-style: none;
+    border-style: hidden;
+    /* Single Property */
+    border-style: solid;
+    border-width: 5px;
+    /* Short Hand */
+    border-style: dotted dashed solid double;
+    border: 5px solid red;
+    /* ======================================================================== */
+}
+/* Border Width
+https://www.w3schools.com/css/css_border_width.asp
+*/
