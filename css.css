@@ -112,6 +112,7 @@
     width: 50%;
     width: initial;
     width: inherit;
+    width: calc(100% - 100px);
     max-width: fit-content;
     max-width: max-content;
     max-width: min-content;
@@ -238,7 +239,7 @@
     text-align: center;
     text-decoration: none;
     display: inline-block;
-
+    background: url("images.gif") -47px -45px; /* -45px dark effect */
     /* Cursor */
     /* ======================================================================== */
     cursor: auto;
@@ -268,7 +269,7 @@
     list-style-type: lower-alpha;
 
     /* Image */
-    list-style-image: url("sqpurple.gif");
+    list-style-image: url("images.gif");
 
     /* Position */
     list-style-position: outside;
@@ -378,9 +379,51 @@
     ::selection	    p::selection	Selects the portion of an element that is selected by a use
     */
 
+    /* Opacity */
+    /* ======================================================================== */
+    opacity: 0.5; /* 0 - 1*/
+
+    /* Navigation Bars */
+    /* ======================================================================== */
+    /* Vertical */
+    /* Horizontal */
+
+    /* Dropdown */
+    /* ======================================================================== */
+    /* 
+        Parents => position: relative
+        Child   => position: absolute, display: none
+        Parents => Hover => Child => display: block
+    */
+
+    /* input[type=text] */
+    /* ======================================================================== */
+    /* input[type=text] */
+
+    /* Specificity */
+    /* ======================================================================== */
+    /*
+        Selector	        Specificity Value
+        ------------------------------------------------------------------------
+        p	                1
+        .test(class)        10
+        #test(id)           100
+        style=""(inline)    1000
+    */
+
+    /* Important */
+    /* ======================================================================== */
+    background-color: red !important;
+
+    /* Math Calculation */
+    /* ======================================================================== */
+    width: calc(100% - 100px);
+    height: calc(100vh - 100px);
+    /* calc() / max() / min() */
+    /* ======================================================================== */
     /* ======================================================================== */
     /* ======================================================================== */
     /* ======================================================================== */
 }
 
-/* https://www.w3schools.com/css/css_pseudo_classes.asp */
+/* https://www.w3schools.com/css/css3_borders.asp */
