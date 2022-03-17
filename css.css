@@ -4,9 +4,8 @@
 * Multi Line Comment
 */
 
-/* Background */
 * {
-    /* Color */
+    /* Background */
     /* ======================================================================== */
     background-color: dodgerblue;
     background: rgba(0, 128, 0, 0.3); /* Green background with 30% opacity */
@@ -17,11 +16,14 @@
     background-repeat: repeat-x;
     background-repeat: repeat-y;
     background-repeat: no-repeat;
+    background-repeat: no-repeat, repeat;
     /* Position */
     background-position: right top;
     /* Attachment */
     background-attachment: fixed;
     background-attachment: scroll;
+    /* Origin */
+    background-origin: content-box;
     /* Short Hand */
     /* background: #ffffff url("img_tree.png") no-repeat right top; */
 
@@ -53,6 +55,7 @@
     /* Short Hand */
     border-style: dotted dashed solid double;
     border: 5px solid red;
+    border: 5px solid currentcolor;
     /* Border Color */
     border-color: red;
     border-color: #fff;
@@ -67,6 +70,16 @@
         bottom border is double
         left border is dashed
     */
+
+    /* Border radius */
+    /* ======================================================================== */
+    border-radius: 25px;
+    border-radius: 25%;
+    border-radius: 25px 50px 75px 100px;
+    /* Image */
+    border: 10px solid transparent;
+    border-image: url(border.png) 30 round;
+    border-image: url(border.png) 30 stretch;
 
     /* Margin */
     /* ======================================================================== */
@@ -259,6 +272,7 @@
     cursor: text;
     cursor: w-resize;
     cursor: wait;
+    cursor: not-allowed;
 
     /* List Order */
     /* ======================================================================== */
@@ -420,10 +434,129 @@
     width: calc(100% - 100px);
     height: calc(100vh - 100px);
     /* calc() / max() / min() */
+
+    /* Gradients */
     /* ======================================================================== */
+    /* Linear Gradients */
+    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(to right, red, yellow);
+    background-image: linear-gradient(to bottom right, red, yellow);
+
+    /* Radial Gradients */
+    background-image: radial-gradient(red, yellow, green);
+    background-image: radial-gradient(circle, red, yellow, green);
+    background-image: radial-gradient(
+        farthest-side at 60% 55%,
+        red,
+        yellow,
+        black
+    );
+
+    /* Conic Gradient */
+    background-image: conic-gradient(red, yellow, green);
+    background-image: conic-gradient(red, yellow, green, blue, black);
+
+    background-image: conic-gradient(
+        red 0deg,
+        red 90deg,
+        yellow 90deg,
+        yellow 180deg,
+        green 180deg,
+        green 270deg,
+        blue 270deg
+    );
+    border-radius: 50%;
+
+    /* closer */
+    /* https://www.w3schools.com/css/tryit.asp?filename=trycss3_gradient-radial_size */
+
+    /* Shadow */
+    /* ======================================================================== */
+    text-shadow: 2px 2px;
+    text-shadow: 0 0 3px #ff0000;
+    box-shadow: 10px 10px lightblue;
+
+    /* Overflow */
+    /* ======================================================================== */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: keep-all;
+    word-break: break-all;
+
+    writing-mode: horizontal-tb;
+    writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+
+    /* Animation */
+    /* ======================================================================== */
+    /* The Transforms Method */
+    transform: translate(50px, 100px);
+    transform: rotate(20deg);
+    transform: rotate(-20deg);
+    transform: scale(2, 3);
+    transform: scaleX(2);
+    transform: scaleY(3);
+    transform: skewX(20deg);
+    transform: skewY(20deg);
+    transform: skew(20deg, 10deg);
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+
+    transform: rotateX(150deg);
+    transform: rotateY(150deg);
+    transform: rotateZ(90deg);
+
+    transition-timing-function: linear;
+    transition-timing-function: ease;
+    transition-timing-function: ease-in;
+    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
+
+    transition-delay: 1s;
+
+    transition-property: width;
+    transition-duration: 2s;
+    transition-timing-function: linear;
+    transition-delay: 1s;
+    transition: width 2s linear 1s;
+
+    /* transition: width 2s, height 4s; */
+    transition: all 2s;
+    /* https://www.w3schools.com/css/css3_2dtransforms.asp */
+    /* Animation Keyframe */
+    /* https://www.w3schools.com/css/css3_animations.asp */
+
+    /* Tooltips */
+    /* ======================================================================== */
+    /* https://www.w3schools.com/css/css_tooltip.asp */
+
+    /* Image filter */
+    /* ======================================================================== */
+    filter: grayscale(100%);
+    /* ******* */
+    /* https://www.w3schools.com/css/tryit.asp?filename=trycss_css_image_overlay_slidebottom */
+
+    /* Object-fit */
+    /* ======================================================================== */
+    object-fit: cover;
+    object-fit: fill;
+    object-fit: contain;
+    object-fit: none;
+    object-fit: scale-down;
+    object-position: 80% 100%;
+
+    /* Masking */
+    /* ======================================================================== */
+    /* https://www.w3schools.com/css/css3_masking.asp */
+
+    /* Pagination */
+    /* ======================================================================== */
+    /* https://www.w3schools.com/css/css3_pagination.asp# */
     /* ======================================================================== */
     /* ======================================================================== */
     /* ======================================================================== */
 }
 
-/* https://www.w3schools.com/css/css3_borders.asp */
+/* https://www.w3schools.com/css/css3_multiple_columns.asp */
