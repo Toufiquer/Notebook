@@ -307,8 +307,12 @@
     display: inline;
     display: block;
     display: none;
-    visibility: hidden;
 
+    /* The visibility Property */
+    /* ======================================================================== */
+    visibility: visible;
+    visibility: hidden;
+    visibility: collapse;
     /* Position */
     /* ======================================================================== */
     position: static;
